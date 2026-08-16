@@ -10,4 +10,5 @@ packaged-project
 # macOS
 .DS_Store
 
-.trae
+.trae/
+.github/
