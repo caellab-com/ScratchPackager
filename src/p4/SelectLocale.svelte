@@ -29,12 +29,13 @@
     'zh-tw': 'zh-TW'
   };
   
-  const BASE_PATH = '/tool/scratchpackager';
+  const BASE_PATH = '';
   
   // 从URL获取当前语言
   function getCurrentLocaleFromURL() {
     const path = window.location.pathname;
-    const match = path.match(/\/tool\/scratchpackager\/([a-z]{2}-[A-Z]{2})\//);
+    // 匹配根目录下的语言代码，如 /zh-CN/ 或 /en-US/
+    const match = path.match(/^\/([a-z]{2}-[A-Z]{2})\//);
     if (match) {
       const bcp47Code = match[1];
       const entry = Object.entries(localeToBCP47).find(([_, v]) => v === bcp47Code);
@@ -51,7 +52,7 @@
   function handleLocaleChange(event) {
     const newLocale = event.target.value;
     const bcp47Code = localeToBCP47[newLocale] || newLocale;
-    const newURL = `${BASE_PATH}/${bcp47Code}/`;
+    const newURL = `/${bcp47Code}/`;
     
     // 使用JS跳转到新语言的URL
     window.location.href = newURL;

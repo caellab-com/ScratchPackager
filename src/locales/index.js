@@ -63,7 +63,8 @@ const bcp47ToInternal = {
 // 从URL中获取语言代码
 const getLocaleFromURL = () => {
   const path = window.location.pathname;
-  const match = path.match(/\/tool\/scratchpackager\/([a-z]{2}-[A-Z]{2})\//);
+  // 匹配根目录下的语言代码，如 /zh-CN/ 或 /en-US/
+  const match = path.match(/^\/([a-z]{2}-[A-Z]{2})\//);
   if (match) {
     const bcp47Code = match[1];
     const internalCode = bcp47ToInternal[bcp47Code];

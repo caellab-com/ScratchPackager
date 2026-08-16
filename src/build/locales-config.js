@@ -39,7 +39,7 @@ const getInternalCode = (bcp47Code) => {
 };
 
 // 基础路径
-const BASE_PATH = '/tool/scratchpackager';
+const BASE_PATH = '';
 
 module.exports = {
   localeMap,
