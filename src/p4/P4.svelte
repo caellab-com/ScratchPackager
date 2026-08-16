@@ -210,7 +210,7 @@
       {/if}
     </div>
     <div>
-      <a href="https://www.caellab.com/">{$_('p4.documentation')}</a>
+      <a href="https://xmuer.online/">{$_('p4.documentation')}</a>
     </div>
     <div>
       <SelectTheme />

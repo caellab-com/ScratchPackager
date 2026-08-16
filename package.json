@@ -1,7 +1,7 @@
 {
-  "name": "@caellab/scratchpackager",
+  "name": "xmuer-coding-packager",
   "version": "3.13.0",
-  "description": "Converts Scratch projects into HTML files, zip archives, or executable programs for Windows, macOS, and Linux.",
+  "description": "XMUER Coding Packager (XCP) - Converts Scratch projects into HTML files, zip archives, or executable programs for Windows, macOS, and Linux.",
   "main": "dist/packager.js",
   "scripts": {
     "start": "webpack serve",

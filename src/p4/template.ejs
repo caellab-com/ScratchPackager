@@ -48,8 +48,8 @@
       'sv-SE': { title: APP_NAME + ' - Konvertera Scratch-projekt till HTML, EXE och mer', desc: 'Konverterar Scratch 3, 2 eller 1 projekt till HTML-filer, ZIP-arkiv eller körbara program för Windows, macOS och Linux.' },
       'tr-TR': { title: APP_NAME + ' - Scratch projelerini HTML, EXE ve daha fazlasına dönüştür', desc: 'Scratch 3, 2 veya 1 projelerini HTML dosyaları, ZIP arşivleri veya Windows, macOS ve Linux için çalıştırılabilir programlara dönüştürür.' },
       'uk-UA': { title: APP_NAME + ' - Конвертуйте проекти Scratch в HTML, EXE та інше', desc: 'Перетворює проекти Scratch 3, 2 або 1 у HTML-файли, ZIP-архіви або виконувані програми для Windows, macOS та Linux.' },
-      'zh-CN': { title: '虚舟实验室 ScratchPackager - 将Scratch项目转换为HTML、EXE等格式', desc: '将Scratch 3、2或1项目转换为HTML文件、ZIP压缩包或适用于Windows、macOS和Linux的可执行程序。比HTMLifier和forkphorus更快更易定制。' },
-      'zh-TW': { title: '虛舟實驗室 ScratchPackager - 將Scratch專案轉換為HTML、EXE等格式', desc: '將Scratch 3、2或1專案轉換為HTML檔案、ZIP壓縮檔或適用於Windows、macOS和Linux的可執行程式。' }
+      'zh-CN': { title: 'XMUER Coding Packager (XCP) - 将Scratch项目转换为HTML、EXE等格式', desc: '将Scratch 3、2或1项目转换为HTML文件、ZIP压缩包或适用于Windows、macOS和Linux的可执行程序。比HTMLifier和forkphorus更快更易定制。' },
+      'zh-TW': { title: 'XMUER Coding Packager (XCP) - 將Scratch專案轉換為HTML、EXE等格式', desc: '將Scratch 3、2或1專案轉換為HTML檔案、ZIP壓縮檔或適用於Windows、macOS和Linux的可執行程式。' }
     }; %>
     <% const currentSeo = seoTranslations[currentLocale] || seoTranslations['en-US']; %>
     <title><%= currentSeo.title %></title>
@@ -106,10 +106,45 @@
       'zh-TW': '此頁面需要JavaScript。'
     }; %>
     <noscript><%= noscriptTranslations[currentLocale] || noscriptTranslations['en-US'] %></noscript>
+    
+    <% /* 语言链接列表 - 默认显示，JS加载后隐藏 */ %>
+    <% const localeNames = {
+      'en-US': 'English', 'ca-ES': 'Català', 'cs-CZ': 'Čeština', 'de-DE': 'Deutsch',
+      'es-ES': 'Español', 'fi-FI': 'Suomi', 'fr-FR': 'Français', 'hu-HU': 'Magyar',
+      'it-IT': 'Italiano', 'ja-JP': '日本語', 'ko-KR': '한국어', 'lt-LT': 'Lietuvių',
+      'nb-NO': 'Norsk', 'nl-NL': 'Nederlands', 'pl-PL': 'Polski', 'pt-PT': 'Português',
+      'pt-BR': 'Português (Brasil)', 'ru-RU': 'Русский', 'sl-SI': 'Slovenščina',
+      'sv-SE': 'Svenska', 'tr-TR': 'Türkçe', 'uk-UA': 'Українська',
+      'zh-CN': '简体中文', 'zh-TW': '繁體中文'
+    }; %>
+    <nav id="language-links" style="padding: 20px; text-align: center; border-top: 1px solid #ddd; margin-top: 40px;">
+      <p style="margin-bottom: 10px; font-weight: bold;">Select Language / 选择语言 / 言語を選択</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
+        <% if (typeof supportedLocales !== 'undefined' && supportedLocales) { %>
+          <% supportedLocales.forEach(function(locale) { %>
+            <a href="<%= WEBSITE %><%= locale.code %>/" 
+               style="padding: 6px 12px; text-decoration: none; color: <%= locale.code === currentLocale ? '#fff' : '#0066cc' %>; background-color: <%= locale.code === currentLocale ? '#0066cc' : '#f0f0f0' %>; border-radius: 4px; font-size: 14px;">
+              <%= localeNames[locale.code] || locale.code %>
+            </a>
+          <% }); %>
+        <% } %>
+      </div>
+    </nav>
+    
+    <style>
+      /* JS加载后隐藏语言链接 */
+      body.js-loaded #language-links {
+        display: none;
+      }
+    </style>
+    
     <!-- This element needs to exist in the HTML for some browsers to autocomplete it. -->
     <input type="file" class="input-for-remembering-project-file" autocomplete="on">
     <div id="app"></div>
     <script>
+      // JS加载后添加类名，隐藏语言链接列表
+      document.body.classList.add('js-loaded');
+      
       (function() {
         // This logic is only for the "splash" screen.
         // It's used to prevent a momentary white screen while the page is loading in dark mode.
