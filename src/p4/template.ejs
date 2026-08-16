@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <% const {APP_NAME, WEBSITE} = require('../packager/brand.js'); %>
     
-    <% /* 当没有语言代码时，重定向到对应语言URL */ %>
-    <% if (typeof currentLocale === 'undefined' || !currentLocale) { %>
+    <% /* 根目录自动根据浏览器语言跳转 */ %>
     <script>
       (function() {
-        // BCP47语言代码映射
-        var langMap = {
-          'en': 'en-US', 'ca': 'ca-ES', 'cs': 'cs-CZ', 'de': 'de-DE',
-          'es': 'es-ES', 'fi': 'fi-FI', 'fr': 'fr-FR', 'hu': 'hu-HU',
-          'it': 'it-IT', 'ja': 'ja-JP', 'ko': 'ko-KR', 'lt': 'lt-LT',
-          'nb': 'nb-NO', 'nl': 'nl-NL', 'pl': 'pl-PL', 'pt': 'pt-PT',
-          'pt-br': 'pt-BR', 'ru': 'ru-RU', 'sl': 'sl-SI', 'sv': 'sv-SE',
-          'tr': 'tr-TR', 'uk': 'uk-UA', 'zh-cn': 'zh-CN', 'zh-tw': 'zh-TW'
-        };
-        var userLang = navigator.language || navigator.userLanguage || 'en-US';
-        var bcp47 = langMap[userLang.toLowerCase()] || langMap[userLang.split('-')[0]] || 'en-US';
-        window.location.replace('<%= WEBSITE %>' + bcp47 + '/');
+        // 只在根目录执行跳转，子目录页面不跳转
+        var path = window.location.pathname;
+        if (path === '/' || path === '/index.html') {
+          var langMap = {
+            'en': 'en-US', 'ca': 'ca-ES', 'cs': 'cs-CZ', 'de': 'de-DE',
+            'es': 'es-ES', 'fi': 'fi-FI', 'fr': 'fr-FR', 'hu': 'hu-HU',
+            'it': 'it-IT', 'ja': 'ja-JP', 'ko': 'ko-KR', 'lt': 'lt-LT',
+            'nb': 'nb-NO', 'nl': 'nl-NL', 'pl': 'pl-PL', 'pt': 'pt-PT',
+            'pt-br': 'pt-BR', 'ru': 'ru-RU', 'sl': 'sl-SI', 'sv': 'sv-SE',
+            'tr': 'tr-TR', 'uk': 'uk-UA', 'zh-cn': 'zh-CN', 'zh-tw': 'zh-TW'
+          };
+          var userLang = navigator.language || navigator.userLanguage || 'en-US';
+          var bcp47 = langMap[userLang.toLowerCase()] || langMap[userLang.split('-')[0]] || 'en-US';
+          window.location.replace('<%= WEBSITE %>' + bcp47 + '/');
+        }
       })();
     </script>
-    <% } %>
     <% /* 多语言标题和描述 - 使用BCP47代码 */ %>
     <% const seoTranslations = {
       'en-US': { title: APP_NAME + ' - Convert Scratch projects to HTML, EXE, and more', desc: 'Converts Scratch 3, 2, or 1 projects into HTML files, zip archives, or executable programs for Windows, macOS, and Linux. Faster and more customizable than HTMLifier and forkphorus.' },
