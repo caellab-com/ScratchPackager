@@ -133,7 +133,7 @@ const makeWebsite = () => ({
   ...base,
   devtool: isStandalone ? '' : 'source-map',
   output: {
-    publicPath: '/tool/scratchpackager/',
+    publicPath: '/',
     filename: isProduction ? 'js/[name].[contenthash].js' : 'js/[name].js',
     path: dist
   },
