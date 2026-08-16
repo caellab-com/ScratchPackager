@@ -7,7 +7,4 @@ demo_output*
 .packager-cache
 packaged-project
 
-# macOS
-.DS_Store
-
 .trae/
