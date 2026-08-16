@@ -32,10 +32,6 @@ jobs:
         cp -r dist/* web
       env:
         ENABLE_SERVICE_WORKER: "1"
-    - name: Build standalone
-      run: |
-        npm run build-standalone-prod
-        cp dist/standalone.html web
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v4
       with:
