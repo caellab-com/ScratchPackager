@@ -1,5 +1,5 @@
 node_modules
-dist
+
 *.zip
 
 # Related to Node.js API and related demo scripts
