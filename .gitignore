@@ -1,5 +1,5 @@
 node_modules
-
+dist/
 *.zip
 
 # Related to Node.js API and related demo scripts
@@ -11,4 +11,3 @@ packaged-project
 .DS_Store
 
 .trae/
-.github/
