@@ -61,7 +61,7 @@
     color-scheme: dark;
   }
   :global(a) {
-    color: #4c1d95;
+    color: #7c3aed;
   }
   :global([theme="dark"] a) {
     color: #56b2ff;
@@ -193,26 +193,26 @@
   <footer>
     <div>
       {#if PRIVACY_POLICY && !isStandalone}
-        <a href={PRIVACY_POLICY}>{$_('p4.privacy')}</a>
+        <a href={PRIVACY_POLICY} target="_blank">{$_('p4.privacy')}</a>
         <span> - </span>
       {/if}
-      <a href={FEEDBACK_PRIMARY.link}>{$_('p4.feedback')}</a>
+      <a href={FEEDBACK_PRIMARY.link} target="_blank">{$_('p4.feedback')}</a>
       {#if SOURCE_CODE}
         <span> - </span>
-        <a href={SOURCE_CODE}>{$_('p4.sourceCode')}</a>
+        <a href={SOURCE_CODE} target="_blank">{$_('p4.sourceCode')}</a>
       {/if}
       {#if DONATE}
         <!-- Donation link needs to be wrapped in another element so we can hide it in the Mac App Store -->
         <span class="donate-link">
           <span> - </span>
-          <a href={DONATE}>{$_('p4.donate')}</a>
+          <a href={DONATE} target="_blank">{$_('p4.donate')}</a>
         </span>
       {/if}
     </div>
     <div>
-      <a href="https://coding.xmuer.online/">XCC</a>
-      <a href="https://engine.xmuer.online/">XCE</a>
-      <a href="https://forum.xmuer.online/">XF</a>
+      <a href="https://coding.xmuer.online/" target="_blank">XCC</a>
+      <a href="https://engine.xmuer.online/" target="_blank">XCE</a>
+      <a href="https://forum.xmuer.online/" target="_blank">XF</a>
     </div>
     <div>
       <SelectTheme />
