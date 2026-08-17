@@ -61,7 +61,7 @@
     color-scheme: dark;
   }
   :global(a) {
-    color: blue;
+    color: #4c1d95;
   }
   :global([theme="dark"] a) {
     color: #56b2ff;
@@ -157,7 +157,7 @@
   {#if isSupported}
     <SelectProject bind:projectData />
   {:else}
-    <Section accent="#4C97FF">
+    <Section accent="#2d6a4f">
       <h2>{$_('p4.browserNotSupported')}</h2>
       <p>{$_('p4.browserNotSupportedDescription')}</p>
     </Section>
