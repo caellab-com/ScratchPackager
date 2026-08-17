@@ -128,7 +128,7 @@
         "documentation": "Dodatno gradivo in pomoč",
         "donate": "Prispevaj",
         "attribution": "XMUER Coding Packager izhaja iz TurboWarp Packager. Iskrena hvala ekipi TurboWarp Packager.",
-        "license": "[CaelLab](https://www.caellab.com) vsakomu podeljuje pravico do razširjanja besedila in kode XMUER Coding Packager pod [MPL-2.0](https://130.wiki/wiki/License:MPL-2.0).",
+        "license": "<a href="https://www.caellab.com">CaelLab</a> vsakomu podeljuje pravico do razširjanja besedila in kode XMUER Coding Packager pod [MPL-2.0](https://130.wiki/wiki/License:MPL-2.0).",
         "error": "Napaka",
         "errorMessage": "Sporočilo: {error}",
         "feedback": "Povratne informacije",
