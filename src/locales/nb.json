@@ -147,7 +147,7 @@
         "documentation": "Tilleggsressurser og hjelp",
         "donate": "Doner",
         "attribution": "XMUER Coding Packager er avledet fra TurboWarp Packager. Oppriktig takknemlighet til TurboWarp Packager teamet.",
-        "license": "<a href="https://www.caellab.com">CaelLab</a> gir alle rett til å distribuere all tekst og kode i XMUER Coding Packager under [MPL-2.0](https://130.wiki/wiki/License:MPL-2.0).",
+        "license": "<a href="https://www.caellab.com">CaelLab</a> gir alle rett til å distribuere all tekst og kode i XMUER Coding Packager under <a href="https://130.wiki/wiki/License:MPL-2.0">MPL-2.0</a>.",
         "error": "Feil",
         "errorMessage": "Melding: {error}",
         "feedback": "Tilbakemelding",

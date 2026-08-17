@@ -146,7 +146,7 @@
         "documentation": "Ek kaynaklar ve yardım",
         "donate": "Bağış Yapın",
         "attribution": "XMUER Coding Packager, TurboWarp Packager'dan türetilmiştir. TurboWarp Packager ekibine içten teşekkürler.",
-        "license": "<a href="https://www.caellab.com">CaelLab</a>, herkese XMUER Coding Packager'daki tüm metin ve kodu [MPL-2.0](https://130.wiki/wiki/License:MPL-2.0) altında dağıtma hakkı verir.",
+        "license": "<a href="https://www.caellab.com">CaelLab</a>, herkese XMUER Coding Packager'daki tüm metin ve kodu <a href="https://130.wiki/wiki/License:MPL-2.0">MPL-2.0</a> altında dağıtma hakkı verir.",
         "error": "Hata",
         "errorMessage": "Mesaj: {error}",
         "feedback": "Geribildirim",
