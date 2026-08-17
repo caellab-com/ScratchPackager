@@ -132,7 +132,7 @@
         "documentation": "Kiegészítő anyagok és segítség",
         "donate": "Adományozz",
         "attribution": "A XMUER Coding Packager a TurboWarp Packager-ből származik. Őszinte köszönet a TurboWarp Packager csapatának.",
-        "license": "<a href="https://www.caellab.com">CaelLab</a> mindenki számára engedélyezi az XMUER Coding Packager összes szövegének és kódjának terjesztését a [MPL-2.0](https://130.wiki/wiki/License:MPL-2.0) licenc alatt.",
+        "license": "<a href="https://www.caellab.com">CaelLab</a> mindenki számára engedélyezi az XMUER Coding Packager összes szövegének és kódjának terjesztését a <a href="https://130.wiki/wiki/License:MPL-2.0">MPL-2.0</a> licenc alatt.",
         "error": "Hiba",
         "errorMessage": "Üzenet: {error}",
         "feedback": "Visszajelzés",
