@@ -61,7 +61,7 @@
     color-scheme: dark;
   }
   :global(a) {
-    color: #7c3aed;
+    color: #2255dd;
   }
   :global([theme="dark"] a) {
     color: #56b2ff;
