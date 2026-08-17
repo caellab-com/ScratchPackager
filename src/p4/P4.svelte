@@ -223,6 +223,6 @@
     <p class="attribution">
       {$_('p4.attribution')}
     </p>
-    <p>{$_('p4.license')}</p>
+    <p>{@html $_('p4.license')}</p>
   </footer>
 </main>
