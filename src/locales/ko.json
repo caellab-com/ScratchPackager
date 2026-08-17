@@ -161,6 +161,7 @@
         "documentation": "추가적인 리소스와 도움말",
         "donate": "기부하기",
         "attribution": "XMUER Coding Packager는 TurboWarp Packager에서 파생되었습니다. TurboWarp Packager 팀에 진심으로 감사드립니다.",
+        "license": "<a href=\"https://www.caellab.com\">CaelLab</a>은 XMUER Coding Packager의 모든 텍스트와 코드를<a href=\"https://130.wiki/wiki/License:MPL-2.0\">MPL-2.0</a>으로 배포할 권리를 전 세계에 부여합니다.",
         "error": "오류",
         "errorMessage": "메시지: {error}",
         "feedback": "문의하기",

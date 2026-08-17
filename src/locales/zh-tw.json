@@ -94,6 +94,7 @@
         "errorMessage": "訊息：{error}",
         "feedback": "回饋",
         "attribution": "XMUER Coding Packager 衍生自 TurboWarp Packager，向 TurboWarp Packager 團隊致以最誠摯的感謝。",
+        "license": "<a href=\"https://www.caellab.com\">虛舟實驗室</a>授予世界上任何人在 XMUER Coding Packager 中的所有文本及程式碼以 <a href=\"https://130.wiki/wiki/License:MPL-2.0\">MPL-2.0</a> 分發。",
         "privacy": "隱私權政策",
         "refresh": "重新整理",
         "reportBug": "回報錯誤",

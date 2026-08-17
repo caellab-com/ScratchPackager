@@ -123,6 +123,7 @@
         "documentation": "Papildomi ištekliai bei pagalba",
         "donate": "Paaukoti",
         "attribution": "XMUER Coding Packager yra kilęs iš TurboWarp Packager. Nuoširdi padėka TurboWarp Packager komandai.",
+        "license": "<a href="https://www.caellab.com">CaelLab</a> suteikia teisę visiems platinti visą XMUER Coding Packager tekstą ir kodą pagal [MPL-2.0](https://130.wiki/wiki/License:MPL-2.0).",
         "error": "Klaida",
         "errorMessage": "Žinutė: {error}",
         "feedback": "Atsiliepimas",

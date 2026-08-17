@@ -210,7 +210,9 @@
       {/if}
     </div>
     <div>
-      <a href="https://xmuer.online/">{$_('p4.documentation')}</a>
+      <a href="https://coding.xmuer.online/">XCC</a>
+      <a href="https://engine.xmuer.online/">XCE</a>
+      <a href="https://forum.xmuer.online/">XF</a>
     </div>
     <div>
       <SelectTheme />
@@ -221,5 +223,6 @@
     <p class="attribution">
       {$_('p4.attribution')}
     </p>
+    <p>{$_('p4.license')}</p>
   </footer>
 </main>
