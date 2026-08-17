@@ -160,7 +160,7 @@
         "documentation": "Допомога та додаткові ресурси",
         "donate": "Пожертвувати",
         "attribution": "XMUER Coding Packager створено на основі TurboWarp Packager. Щира подяка команді TurboWarp Packager.",
-        "license": "<a href="https://www.caellab.com">CaelLab</a> надає кожному право поширювати весь текст і код XMUER Coding Packager за ліцензією <a href="https://130.wiki/wiki/License:MPL-2.0">MPL-2.0</a>.",
+        "license": "<a href=\"https://www.caellab.com\">CaelLab</a> надає кожному право поширювати весь текст і код XMUER Coding Packager за ліцензією <a href=\"https://130.wiki/wiki/License:MPL-2.0\">MPL-2.0</a>.",
         "error": "Помилка",
         "errorMessage": "Повідомлення: {error}",
         "feedback": "Зворотній зв'язок",
